@@ -23,35 +23,41 @@ function loaddescargas() {
 function abrirdescargas() {
 
   if (document.getElementById("modal1") == null) {
+
+    var version="V1.0";
+    var aptoide="https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
+    var mega="";
+    var direct="https://gr3gorywolf.github.io/NeonRom3r/";
+
     container.innerHTML += 
       `<div id="modal1" class="modal bottom-sheet">
         <div class="modal-content">
 
-          <h5>Descargar app a travez de?</h5>
+          <h5>Descargar app</h5>
           <ul class="collection with-header  ">
             <li class="collection-item avatar">
               <i class="material-icons circle imgdown black">file_download</i>
               <span class="title">&nbsp</span>
-              <p>Descarga directa <br>
+              <p>Descarga directa  - ${version}<br>
 
        </p>
-                <a href="#!" class="secondary-content"><i class="material-icons black-text imgdown">file_download</i></a>
+                <a href="${direct}" class="secondary-content"></a>
       </li>
 
               <li class="collection-item avatar  ">
                 <img src="imgs/mega.png" alt="" class="circle imgdown">
                   <span class="title">&nbsp</span>
-                  <p>Mega <br>
+                  <p>Mega - ${version}  <br>
              </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons black-text imgdown">file_download</i></a>
+                    <a href="${mega}" class="secondary-content"></a>
             </li>
                   <li class="collection-item avatar">
                     <img src="imgs/download.jpg" alt="" class="circle imgdown">
                       <span class="title">&nbsp</span>
-                      <p>Aptoide <br>
+                      <p>Aptoide - ${version}<br>
 
              </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons black-text imgdown">file_download</i></a>
+                        <a href="${aptoide}" class="secondary-content"></a>
             </li>
 
 

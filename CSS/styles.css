@@ -3,7 +3,10 @@ height:65px;
 width: 180px;
 margin-left:10px;
 }
-
+[role=button]
+{
+    cursor:pointer
+}
 nav{
     top:0px;
     position:fixed;

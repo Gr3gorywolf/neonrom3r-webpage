@@ -27,7 +27,7 @@ function abrirdescargas() {
     var version="V1.0";
     var aptoide="https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
     var mega="";
-    var direct="https://gr3gorywolf.github.io/NeonRom3r/";
+    var direct="https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk";
 
     container.innerHTML += 
       `<div id="modal1" class="modal bottom-sheet">
@@ -35,20 +35,20 @@ function abrirdescargas() {
 
           <h5>Descargar app</h5>
           <ul class="collection with-header  ">
-            <li class="collection-item avatar"  onclick="window.open('${direct}','_self')">
+            <li  role="button" class="collection-item avatar"  onclick="window.open('${direct}','_self') ;instance2.close()">
               <i class="material-icons circle imgdown black">file_download</i>
               <span class="title">&nbsp</span>
               <p>Descarga directa  - ${version}<br>
              </p>
       </li>
 
-              <li class="collection-item avatar" onclick="window.open('${mega}','_self')">
+              <li role="button" class="collection-item avatar" onclick="window.open('${mega}','_self') ;instance2.close()">
                 <img src="imgs/mega.png" alt="" class="circle imgdown">
                   <span class="title">&nbsp</span>
                   <p>Mega - ${version}  <br>
                   </p>
             </li>
-                  <li class="collection-item avatar" onclick="window.open('${aptoide}','_self')">
+                  <li  role="button" href="#" class="collection-item avatar" onclick="window.open('${aptoide}','_self') ;instance2.close()">
                     <img src="imgs/download.jpg" alt="" class="circle imgdown">
                       <span class="title">&nbsp</span>
                       <p>Aptoide - ${version}<br>
@@ -96,9 +96,11 @@ function loadindex() {
                <h4>${data[i].titulo} </h4>                                                                                                     
                <h6 class='light grey-text text-lighten-3'>                                                                              
                ${data[i].texto}                                
-                  <br><br><br><br><br><br><a href="${data[i].referencia} ">Conozca mas</a>                                                                                   
-                 </h6>                                                                                                                  
-             </div>                                                                                                                     
+                                                                                              
+                 </h6>     
+                 <a href="${data[i].referencia}" style="margin-top:calc(100% - 80px);">Conozca mas</a>                                                                                                                     
+             </div> 
+                                                                                                                            
            </li>  `
 
   }
@@ -106,6 +108,16 @@ function loadindex() {
 
   var elems = document.querySelectorAll('.slider');
   var instances = M.Slider.init(elems, { interval: 5000 });
+
+  window.addEventListener('wheel', function(e) {
+    if (e.deltaY < 0) {
+      instances[0].prev();
+    }
+    if (e.deltaY > 0) {
+      instances[0].next();
+    }
+  });
+
 
 
 }

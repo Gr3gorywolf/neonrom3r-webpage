@@ -35,29 +35,24 @@ function abrirdescargas() {
 
           <h5>Descargar app</h5>
           <ul class="collection with-header  ">
-            <li class="collection-item avatar">
+            <li class="collection-item avatar"  onclick="window.open('${direct}','_self')">
               <i class="material-icons circle imgdown black">file_download</i>
               <span class="title">&nbsp</span>
               <p>Descarga directa  - ${version}<br>
-
-       </p>
-                <a href="${direct}" class="secondary-content"></a>
+             </p>
       </li>
 
-              <li class="collection-item avatar  ">
+              <li class="collection-item avatar" onclick="window.open('${mega}','_self')">
                 <img src="imgs/mega.png" alt="" class="circle imgdown">
                   <span class="title">&nbsp</span>
                   <p>Mega - ${version}  <br>
-             </p>
-                    <a href="${mega}" class="secondary-content"></a>
+                  </p>
             </li>
-                  <li class="collection-item avatar">
+                  <li class="collection-item avatar" onclick="window.open('${aptoide}','_self')">
                     <img src="imgs/download.jpg" alt="" class="circle imgdown">
                       <span class="title">&nbsp</span>
                       <p>Aptoide - ${version}<br>
-
-             </p>
-                        <a href="${aptoide}" class="secondary-content"></a>
+                     </p>
             </li>
 
 
@@ -79,6 +74,15 @@ function abrirdescargas() {
 
 
 }
+function loadfunciones(){
+
+
+
+    var elemsx = document.querySelectorAll('.materialboxed');
+    var instancesxd = M.Materialbox.init(elemsx);
+
+}
+
 function loadindex() {
 
 

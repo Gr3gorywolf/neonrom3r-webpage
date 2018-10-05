@@ -1,0 +1,48 @@
+.logito{
+height:65px;
+width: 180px;
+margin-left:10px;
+}
+
+nav{
+    top:0px;
+    position:fixed;
+ z-index: 500;
+
+}
+.imgdown{
+margin-top:15px;
+
+}
+.inline-icon {
+    vertical-align: bottom;
+ 
+
+ }
+.columna{
+
+    background-color: rgb(54, 54, 54);
+}
+.nav-wrapper
+{
+   
+background-color:black;
+}
+.sidenav
+{
+
+background-color:black;
+}
+
+#container{
+margin-top:60px;
+
+height: 100%;
+width: 100%;
+
+}
+body
+{
+
+    background-color:white;
+}

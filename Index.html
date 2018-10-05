@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible">
+    <link rel="icon" href="imgs/logo.png">
+    <title>Neon Rom3r</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+</head>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger" onclick="instance.open()">
+                        <i class="material-icons">menu</i>
+                </a>
+          <img href="index.html" class="brand-logo logito "  src="imgs/logolarge.png"/>
+          <ul class="right hide-on-med-and-down">
+                <li><a href="novedades.html" class="link">Novedades</a></li>
+                <li><a onclick="abrirdescargas();" class="link">Descargar</a></li>
+                <li><a href="funciones.html" class="link">Funciones</a></li>
+              </ul>
+       
+        </div>
+      </nav>
+      <ul id="nav-mobile" class="sidenav">
+            <li><a  href="novedades.html" class="white-text"><i class="material-icons white-text">notifications</i>Novedades</a></li>
+            <li><a onclick="instance.close(); abrirdescargas();" class="white-text"><i class="material-icons white-text">file_download</i>Descargar</a></li>
+            <li><a href="funciones.html" class="white-text"><i class="material-icons white-text">functions</i>Funciones</a></li>
+          </ul>
+
+         
+
+
+
+
+</header>
+<body onload="loadindex()">
+       
+          <div id="container">
+
+          </div>
+        <div class="slider fullscreen" >
+            <ul class="slides black" id="slider">                          
+            </ul>
+          </div>
+   
+</body>
+</html> 
+
+<script src="Data/slides.js"></script>
+<script src="JS/funciones.js"></script>

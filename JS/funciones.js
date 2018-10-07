@@ -92,7 +92,7 @@ innertexto+=`<div class="col s12 m6 l4" id="${data[i].feaid}">
           <div class="card" >
         <div class="card-image">
    
-    <video src="${data[i].imagen}" style="height:100%;width:100%;background-color:black;" poster="imgs/logo.png"  controls preload="metadata">
+    <video src="${data[i].imagen}" style="height:320px;width:100%;background-color:black;" poster="imgs/logo.png"  controls preload="metadata">
   
   </div>
   <div class="card-content">

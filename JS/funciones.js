@@ -1,5 +1,6 @@
 var instance = null;
 var instance2 = null;
+var instance3 = null;
 var container = null;
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.getElementsByClassName('sidenav');
@@ -30,7 +31,7 @@ function abrirdescargas() {
     var direct="https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk";
 
     container.innerHTML += 
-      `<div id="modal1" class="modal bottom-sheet">
+      `<div id="modal1" class="modal bottom-sheet white">
         <div class="modal-content">
 
           <h5>Descargar app</h5>
@@ -78,8 +79,43 @@ function loadfunciones(){
 
 
 
-    var elemsx = document.querySelectorAll('.materialboxed');
-    var instancesxd = M.Materialbox.init(elemsx);
+   
+   /*   var elems = document.getElementsByClassName('tap-target');
+     instance3 = M.TapTarget.init(elems[0]);
+     instance3.open();*/
+    
+
+var innertexto="";
+for(let i=0;i<data.length;i++){
+
+innertexto+=`<div class="col s12 m6 l4" id="${data[i].feaid}">
+          <div class="card" >
+        <div class="card-image">
+   
+    <video src="${data[i].imagen}" style="height:100%;width:100%"  controls preload="metadata">
+  
+  </div>
+  <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4 singleline" style="font-size:20px;" >${data[i].titulo}</span>
+   
+  </div>
+  <div class="card-action">
+  <a role="button" style="color:black;" class="activator">MOSTRAR MAS</a>
+  
+</div>
+  <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">${data[i].titulo}<i class="material-icons right">close</i></span>
+      <p>${data[i].texto}</p>
+    </div>
+</div>
+
+
+</div>
+</div>`
+
+}
+container.innerHTML=innertexto;
+$('.gif').gifplayer();
 
 }
 

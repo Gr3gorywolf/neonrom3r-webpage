@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="CSS/gifplayer.css">
 </head>
 <header>
     <nav>
@@ -33,13 +33,31 @@
             <li><a href="funciones.html" class="white-text"><i class="material-icons white-text">functions</i>Funciones</a></li>
           </ul>
 </header>
+
 <body onload="loadfunciones()">
-       <div id="container">
-          
+    
+    <div class="tap-target black"  data-target="calta">
+        <div class="tap-target-content">
+          <h5 style="color: white;margin-left:25%;">Vea mas informacion al tocar aqui</h5>
+         
+        </div>
+      </div>
+       <div id="container" class="row">
+
+
+      
        
-       </div>
+
+
+          </div>
+       
+      
 </body>
 </html> 
-
-
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="JS/jquery.gifplayer.js"></script>
+<script src="Data/features.js"></script>
 <script src="JS/funciones.js"></script>

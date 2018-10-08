@@ -13,8 +13,42 @@ document.addEventListener('DOMContentLoaded', function () {
     window.open("index.html", "_self");
   });
 });
-function loaddescargas() {
+function loadnovedades() {
 
+
+
+
+  var innertexto="";
+  for(let i=0;i<data.length;i++){
+  
+  innertexto+=`<div class="col s12 m6 l4" >
+            <div class="card" >
+          <div class="card-image">
+     
+      <img src="${data[i].imagen}" style="height:100%;width:100%;background-color:black;" >
+    
+    </div>
+    <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4 singleline" style="font-size:20px;" >${data[i].titulo}</span>
+     
+    </div>
+    <div class="card-action">
+    <a role="button" style="color:black;" class="activator">MOSTRAR MAS</a>
+    
+  </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">${data[i].titulo}<i class="material-icons right">close</i></span>
+        <p>${data[i].texto}</p>
+      </div>
+  </div>
+  
+  
+  </div>
+  </div>`
+  
+  }
+  container.innerHTML=innertexto;
+  
 
 
 
@@ -115,7 +149,7 @@ innertexto+=`<div class="col s12 m6 l4" id="${data[i].feaid}">
 
 }
 container.innerHTML=innertexto;
-$('.gif').gifplayer();
+
 
 }
 
@@ -126,7 +160,8 @@ function loadindex() {
   var slider = document.getElementById("slider");
   var inner = "";
   for (let i = 0; i < data.length; i++) {
-    inner += ` <li>                                                                                                              
+    
+    var edit  = ` <li>                                                                                                              
              <img src='${data[i].imagen}'  style='opacity:0.5'>                                  
              <div class='caption center-align' >                                                                                        
                <h4>${data[i].titulo} </h4>                                                                                                     
@@ -134,11 +169,16 @@ function loadindex() {
                ${data[i].texto}                                
                                                                                               
                  </h6>     
-                 <a href="${data[i].referencia}" style="margin-top:calc(100% - 80px);">Conozca mas</a>                                                                                                                     
+                 <a href='${data[i].referencia}' style='margin-top:calc(100% - 80px);'>Conozca mas</a>                                                                                                                     
              </div> 
                                                                                                                             
            </li>  `
 
+           if(data[i].referencia=="#"){
+
+            edit=edit.replace("<a href='#' style='margin-top:calc(100% - 80px);'>Conozca mas</a>","")
+           }
+           inner +=edit
   }
   slider.innerHTML += inner;
 
@@ -157,5 +197,28 @@ function loadindex() {
 
 
 }
+function loadgaleria(){
+
+
+  var innertexto="";
+  for(let i=0;i<data.length;i++){
+  
+  innertexto+=`<div class="col s12 m6 l4 xl3 container center-align" >
+          
+  <img class="materialboxed scale-transition scale-in" data-caption="${data[i].titulo}" width="100%" height="480px" style=" margin:1%;border-radius:1%;" src="${data[i].imagen}">
+  
+        </div>
+      `
+  
+  }
+  container.innerHTML=innertexto;
+ 
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+
+
+
+}
+
 
 

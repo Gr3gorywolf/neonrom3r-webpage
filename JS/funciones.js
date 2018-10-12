@@ -183,16 +183,9 @@ function loadindex() {
   slider.innerHTML += inner;
 
   var elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems, { interval: 5000 });
+  var instances = M.Slider.init(elems, { interval: 7000 });
 
-  window.addEventListener('wheel', function(e) {
-    if (e.deltaY < 0) {
-      instances[0].prev();
-    }
-    if (e.deltaY > 0) {
-      instances[0].next();
-    }
-  });
+  
 
 
 

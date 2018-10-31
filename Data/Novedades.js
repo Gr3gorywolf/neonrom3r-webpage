@@ -8,7 +8,7 @@ elementos básicos previamente descritos en la sección de funciones`,
 
 },
 {
-    "titulo":"Caida de emulators.games :(",
+    "titulo":"Caida de emulators.games :,(",
     "imagen":"imgs/v1-0.png",
     "texto":`Lastimosamente emulators.games se ha protegido con cloudflare 
     por lo cual es basicamente imposible obtener informacion de los roms y mucho menos descargarlos. 

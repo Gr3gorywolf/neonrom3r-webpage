@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="icon" href="imgs/logo.png">
+        <title>Neon Rom3r</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+</head>
+
+<body onload="loadwebapp()" class=" wallpapered">
+        <header>
+
+
+                <nav class="nav-extended black">
+                        <div class="nav-wrapper">
+                                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large" onclick="instance.open()">
+                                        <i class="material-icons">menu</i>
+                                </a>
+                                <a href="index.html"> <img class="brand-logo logito center " src="imgs/logolarge.png" /></a>
+                                <ul class="right hide">
+                                        <li><a href="novedades.html" class="link">GBA</a></li>
+                                        <li><a onclick=" abrirdescargas();" class="link">GBC</a></li>
+                                        <li><a href="galeria.html" class="link"></a>N64</a></li>
+                                        <li><a href="funciones.html" class="link">SNES</a></li>
+
+                                </ul>
+
+                        </div>
+                        <div class="nav-content black" id="barrabusqueda" style="display:none">
+                                <div class="container" style="margin-top:10px;">
+                                        <div class="col s8 center-align">
+                                                <div class="row">
+                                                        <div class="input-field col s12 white-text">
+                                                                <a class="prefix" href="#"> <i class="material-icons inline-icon"
+                                                                                style="margin-top:-10px;" id="eliminartermino"
+                                                                                onclick="setbutton(this)">search</i></a>
+                                                                <input id="busqueda" type="text" style="color: white;"
+                                                                        placeholder="Nombre del rom">
+
+
+                                                        </div>
+
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </nav>
+                <ul id="nav-mobile" class="sidenav">
+                        <li><a href="index.html" class="white-text"><i class="material-icons white-text">arrow_back</i>Volver
+                                        a la pagina web</a></li>
+
+                        <li class="center-align">
+
+
+                        </li>
+                        <li class="center-align">
+
+
+                        </li>
+                        <li><a href="#" onclick="loadroms('GB');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Game
+                                        Boy</a></li>
+                        <li><a href="#" onclick="loadroms('GBC');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Game
+                                        Boy Color</a></li>
+                        <li><a href="#" onclick="loadroms('GBA');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Game
+                                        Boy Advance</a></li>
+                        <li><a href="#" onclick="loadroms('NES');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Nintendo</a></li>
+                        <li><a href="#" onclick="loadroms('SNES');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Super
+                                        Nintendo</a></li>
+                        <li><a href="#" onclick="loadroms('N64');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Nintendo
+                                        64</a></li>
+                        <li><a href="#" onclick="loadroms('NDS');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Nintendo
+                                        DS</a></li>
+                        <li><a href="#" onclick="loadroms('Dreamcast');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Sega
+                                        Dreamcast</a></li>
+                        <li><a href="#" onclick="loadroms('Genesis');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Sega
+                                        Genesis</a></li>
+                        <li><a href="#" onclick="loadroms('PSX');instance.close();" class="white-text"><i class="material-icons white-text">videogame_asset</i>Playstation
+                                        1</a></li>
+
+
+                </ul>
+        </header>
+        <div class="progress white" id="loader" style="width:100%;position:fixed;top:144px;margin-top:4px;">
+                <div class="indeterminate green"></div>
+        </div>
+
+
+        <main id="container" class="row" style="margin-top:250px;margin-bottom:200px">
+
+
+
+
+                <div class="row container">
+                        <div class="col s12 center-align">
+                                <img src="imgs/Neonrom3rweb.png" class="responsive-img" />
+                        </div>
+                        <div class="col s12 center-align">
+                                <h5 class="white-text">Que es neon rom3r web?<br>Es una plataforma basada en los datos de la aplicacion de
+                                        neonrom3r que le permite a el usuario descargar los roms disponibles sin la
+                                        necesidad de tener descargada la aplicacion<br>Usted puede seleccionar los roms
+                                        que desea dandole click a <i class="material-icons inline-icon">menu</i> en la
+                                        parte superior izquierda y luego dandonle click al nombre de la consola desde
+                                        el menu</h5>
+                        </div>
+
+
+        </main>
+
+
+        <!--  <footer>
+            <span style="color:black;position:fixed;bottom:5px;left:4px;font-size:12px">© 2018 Gregory Cabral De Los Santos Github:github.com/Gr3gorywolf</span>
+        </footer>
+
+-->
+
+
+
+        <div id="modalinfo" class="modal modal-fixed-footer">
+                <div class="modal-content row" id="cotenidomodal">
+                        <div class="col s12 center-align">
+                                <h4 id="infotitle">----</h4>
+                        </div>
+                        <div class="col s12 center-align">
+
+                                <img id="infoimage" height="100%" width="60%" />
+
+                        </div>
+                        <div class="row container ">
+                                <div class="col s12 container">
+                                        <h6 id="inforegion">----</h6>
+                                </div>
+                                <div class="col s12 container">
+                                        <h6 id="infosize">----</h6>
+                                </div>
+                                <div class="col s12 container">
+                                        <h6 id="infoconsole">----</h6>
+                                </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                </div>
+        </div>
+</body>
+
+</html>
+<script src="JS/components.js"></script>
+<script src="JS/neonweb.js"></script>

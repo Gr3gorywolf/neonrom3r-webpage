@@ -18,10 +18,10 @@ function loadnovedades() {
 
 
 
-  var innertexto="";
-  for(let i=0;i<data.length;i++){
-  
-  innertexto+=`<div class="col s12 m6 l4" >
+  var innertexto = "";
+  for (let i = 0; i < data.length; i++) {
+
+    innertexto += `<div class="col s12 m6 l4" >
             <div class="card" >
           <div class="card-image">
      
@@ -45,10 +45,10 @@ function loadnovedades() {
   
   </div>
   </div>`
-  
+
   }
-  container.innerHTML=innertexto;
-  
+  container.innerHTML = innertexto;
+
 
 
 
@@ -59,12 +59,12 @@ function abrirdescargas() {
 
   if (document.getElementById("modal1") == null) {
 
-    var version="V1.0";
-    var aptoide="https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
-    var mega="https://mega.nz/#!RQByCaLZ!x4fRKI-LZKU_JiFZUGJ-2QZ4LZmi67TIG3PIybPuaEg";
-    var direct="https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk";
+    var version = "V1.0";
+    var aptoide = "https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
+    var mega = "https://mega.nz/#!RQByCaLZ!x4fRKI-LZKU_JiFZUGJ-2QZ4LZmi67TIG3PIybPuaEg";
+    var direct = "https://gr3gorywolf.github.io/NeonRom3r/GR3apps.neonrom3r.apk";
 
-    container.innerHTML += 
+    container.innerHTML +=
       `<div id="modal1" class="modal bottom-sheet white">
         <div class="modal-content">
 
@@ -109,20 +109,20 @@ function abrirdescargas() {
 
 
 }
-function loadfunciones(){
+function loadfunciones() {
 
 
 
-   
-   /*   var elems = document.getElementsByClassName('tap-target');
-     instance3 = M.TapTarget.init(elems[0]);
-     instance3.open();*/
-    
 
-var innertexto="";
-for(let i=0;i<data.length;i++){
+  /*   var elems = document.getElementsByClassName('tap-target');
+    instance3 = M.TapTarget.init(elems[0]);
+    instance3.open();*/
 
-innertexto+=`<div class="col s12 m6 l4" id="${data[i].feaid}">
+
+  var innertexto = "";
+  for (let i = 0; i < data.length; i++) {
+
+    innertexto += `<div class="col s12 m6 l4" id="${data[i].feaid}">
           <div class="card" >
         <div class="card-image">
    
@@ -147,8 +147,8 @@ innertexto+=`<div class="col s12 m6 l4" id="${data[i].feaid}">
 </div>
 </div>`
 
-}
-container.innerHTML=innertexto;
+  }
+  container.innerHTML = innertexto;
 
 
 }
@@ -160,8 +160,8 @@ function loadindex() {
   var slider = document.getElementById("slider");
   var inner = "";
   for (let i = 0; i < data.length; i++) {
-    
-    var edit  = ` <li>                                                                                                              
+
+    var edit = ` <li>                                                                                                              
              <img src='${data[i].imagen}'  style='opacity:0.5'>                                  
              <div class='caption center-align' >                                                                                        
                <h4>${data[i].titulo} </h4>                                                                                                     
@@ -174,40 +174,40 @@ function loadindex() {
                                                                                                                             
            </li>  `
 
-           if(data[i].referencia=="#"){
+    if (data[i].referencia == "#") {
 
-            edit=edit.replace("<a href='#' style='margin-top:calc(100% - 80px);'>Conozca mas</a>","")
-           }
-           inner +=edit
+      edit = edit.replace("<a href='#' style='margin-top:calc(100% - 80px);'>Conozca mas</a>", "")
+    }
+    inner += edit
   }
   slider.innerHTML += inner;
 
   var elems = document.querySelectorAll('.slider');
   var instances = M.Slider.init(elems, { interval: 7000 });
 
-  
+
 
 
 
 }
-function loadgaleria(){
+function loadgaleria() {
 
 
-  var innertexto="";
-  for(let i=0;i<data.length;i++){
-  
-  innertexto+=`<div class="col s12 m6 l4 xl3 container center-align" >
+  var innertexto = "";
+  for (let i = 0; i < data.length; i++) {
+
+    innertexto += `<div class="col s12 m6 l4 xl3 container center-align" >
           
   <img class="materialboxed scale-transition scale-in" data-caption="${data[i].titulo}" width="100%" height="480px" style=" margin:1%;border-radius:1%;" src="${data[i].imagen}">
   
         </div>
       `
-  
+
   }
-  container.innerHTML=innertexto;
- 
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
+  container.innerHTML = innertexto;
+
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems);
 
 
 

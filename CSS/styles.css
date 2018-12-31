@@ -3,6 +3,16 @@ height:65px;
 width: 180px;
 margin-left:10px;
 }
+.wallpapered{
+    background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url("../imgs/nes.jpg") ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    }
+.parallax-container {
+    height:900px;
+  }
 [role=button]
 {
     cursor:pointer
@@ -18,6 +28,7 @@ margin-top:15px;
 
 }
 .inline-icon {
+    
     vertical-align: bottom;
  
 

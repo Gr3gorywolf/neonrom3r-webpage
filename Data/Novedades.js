@@ -23,6 +23,20 @@ elementos básicos previamente descritos en la sección de funciones`,
      latencia por lo que ahora la aplicación obtiene información mas rápido`,
     
  }
-
+ ,
+{
+    "titulo":"V2 esta aquí y mucho mejor optimizada",
+    "imagen":"imgs/v2-0.png",
+    "texto":`En esta versión no solo se optimizaron muchísimas 
+    cosas tales como la búsqueda de roms,los tiempos de carga si
+     no que también se añadió una nueva consola la cual
+      es la nintendo ds. Esto se debe a un cambio de 
+      servidor el cual se utiliza uno mucho mas 
+      confiable y con mayor ancho de banda.
+      Tambien se hicieron compatibles el 90% de los emuladores que esta en 
+      la app y no solo eso sino que se mejoraron los métodos de extracción
+    `,
+    
+ }
 
 ]

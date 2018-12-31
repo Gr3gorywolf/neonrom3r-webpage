@@ -74,7 +74,8 @@ function loadroms(consolename, startindex = 0) {
     pagesdictionary = [];
     requ.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-
+            document.getElementById("busqueda").value="";
+            document.getElementById("eliminartermino").innerText = "search";
             infos = JSON.parse(this.responseText);
             let innertexto = "";
             console.log("paso")

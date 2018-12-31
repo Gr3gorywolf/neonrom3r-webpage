@@ -61,7 +61,7 @@ function abrirdescargas() {
 
     var version = "V2.0";
     var aptoide = "https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
-    var mega = "https://mega.nz/#!ZMpn2SyB!riCjQBE8T0Ja4HIWgURFPa767vUpqphGv1R84KhbSw";
+    var mega = "https://mega.nz/#!lBxy2SgD!5k7A1qqqlFBgdWoxAjE0_MAWK9yDvlFdKDtEql6yt_w";
     var direct = "https://github.com/Gr3gorywolf/NeonRom3r/raw/master/docs/GR3apps.neonrom3r.apk";
 
     container.innerHTML +=

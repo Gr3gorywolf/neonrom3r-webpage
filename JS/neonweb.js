@@ -114,7 +114,7 @@ function loadroms(consolename, startindex = 0) {
 
 
 function setbutton(elem) {
-    if (document.getElementById("busqueda").value != "") {
+    if (document.getElementById("busqueda").value !== "") {
 
         document.getElementById("busqueda").value = "";
         filter();

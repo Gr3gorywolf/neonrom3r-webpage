@@ -7,23 +7,23 @@ and also is pretty optimized beacause of the implementation of an infinitescroll
 and if you want to implement something you can do a pull request. 
 
 # Gallery
-### Main page slider
+#### Main page slider
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png"/>
 <br>
-### Info page
+#### Info page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps2.png"/>
 <br>
-### Download bottom drawer
+#### Download bottom drawer
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps3.png"/>
 <br>
-### Gallery page
+#### Gallery page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps4.png"/>
 <br>
-### Functions page
+#### Functions page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps5.png"/>
 <br>
-### Neonrom3r web Main page
+#### Neonrom3r web Main page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps6.png"/>
 <br>
-### Neonrom3r web Sidemenu
+#### Neonrom3r web Sidemenu
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps7.png"/>

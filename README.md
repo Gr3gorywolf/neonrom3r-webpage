@@ -6,5 +6,5 @@ Because of the new scraping strategy you now can download the roms directly from
 and also is pretty optimized beacause of the implementation of an infinitescrolling that allow max 50 elements on the screen so have fun 
 and if you want to implement something you can do a pull request. 
 
-#Gallery
+# Gallery
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png"/>

@@ -8,3 +8,7 @@ and if you want to implement something you can do a pull request.
 
 # Gallery
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png"/>
+<img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps2.png"/>
+<img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps3.png"/>
+<img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps4.png"/>
+<img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps5.png"/>

@@ -10,7 +10,7 @@ and if you want to implement something you can do a pull request.
 <h4> Main page slider</h4>
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png"/>
 <br>
-<h4> Info page</h4>
+<h4>News page</h4>
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps2.png"/>
 <br>
 <h4> Download bottom drawer</h4>

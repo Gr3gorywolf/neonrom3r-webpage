@@ -9,15 +9,21 @@ and if you want to implement something you can do a pull request.
 # Gallery
 ### Main page slider
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png"/>
+<br>
 ### Info page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps2.png"/>
+<br>
 ### Download bottom drawer
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps3.png"/>
+<br>
 ### Gallery page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps4.png"/>
+<br>
 ### Functions page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps5.png"/>
+<br>
 ### Neonrom3r web Main page
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps6.png"/>
+<br>
 ### Neonrom3r web Sidemenu
 <img src="https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps7.png"/>

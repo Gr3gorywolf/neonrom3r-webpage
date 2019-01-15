@@ -1,3 +1,5 @@
+
+
 var infos = null;
 var loader = null;
 var currentpage = 0;
@@ -123,7 +125,9 @@ function setbutton(elem) {
 }
 
 
-
+//TETA=(n)
+//O=(n)
+//OMEGA=(?-n)
 function filter() {
     console.log("pase");
     pagesdictionary = [];
@@ -136,7 +140,7 @@ function filter() {
         var counter = 0;
         for (let i = 0; i < infos.length; i++) {
             console.log("pase");
-            if (infos[i].Name.toLowerCase().includes(termino.toLowerCase())) {
+            if (infos[i].Name.toLowerCase().indexOf(termino.toLowerCase())!=-1) {
 
                 innertexto += getappcard(infos[i].Portrait, infos[i].Name, infos[i].InfoLink, infos[i].Region, i)
                 counter++;
@@ -152,7 +156,6 @@ function filter() {
 
 
             }
-
         }
         if (innertexto != undefined)
             pagesdictionary.push(innertexto)
@@ -172,7 +175,7 @@ function filter() {
         loadroms(currentconsole, currentpage)
 
     }
-
+ 
 }
 
 

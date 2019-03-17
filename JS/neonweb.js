@@ -8,6 +8,7 @@ var nohandle = false;
 var pagesdictionary = [];
 var currentconsole = "";
 var instance = null;
+
 function loadwebapp() {
 
     var elems = document.getElementsByClassName('sidenav');
@@ -28,7 +29,17 @@ function loadwebapp() {
         }
     });
     loader.style.display="none";
- 
+    if(window.location.hash.toString()!=""){
+         let hashroute=window.location.hash.toString().replace("#","");
+         hashroute=hashroute.substring(1,hashroute.length);
+         console.log(hashroute);
+         if(hashroute.split('/')[1]==null)
+          loadroms(hashroute);
+         else
+          loadroms(hashroute.split("/")[0],parseInt( hashroute.split("/")[1])) 
+
+
+    }
 
  
 
@@ -46,7 +57,7 @@ window.onscroll = function () {
         container.innerHTML = pagesdictionary[currentpage];
         d.scrollTo(0, height / 1.2);
         console.log("subio");
-
+        location.href="#/"+currentconsole+"/"+currentpage
     }
     if (nohandle)
         nohandle = false;
@@ -60,7 +71,7 @@ window.onscroll = function () {
                 container.innerHTML = pagesdictionary[currentpage];
                 // nohandle=true;
                 d.scrollTo(0, 20);
-
+                location.href="#/"+currentconsole+"/"+currentpage
             }
         }
     }

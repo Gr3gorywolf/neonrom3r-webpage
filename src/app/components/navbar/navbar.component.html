@@ -1,0 +1,70 @@
+<nav class="animated slideInDown">
+  <div class="nav-wrapper ">
+    <a materialize="sideNav" [materializeParams]="[{edge:'left'}]" data-activates="nav-mobile" class="button-collapse">
+      <i class="material-icons">menu</i>
+    </a>
+    <a [routerLink]="'/'" routerLinkActive="router-link-active"> <img class="brand-logo logito "
+        src="assets/imgs/logolarge.png" /></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a [routerLink]="'/news'" class="link">Novedades</a></li>
+      <li><a (click)="openModal()" class="link">Descargar</a></li>
+      <li><a [routerLink]="'/gallery'" class="link">Galería</a></li>
+      <li><a [routerLink]="'/features'" class="link">Funciones</a></li>
+      <li><a [routerLink]="'/neonromerweb'" class=" white-text">NeonRom3r Web</a></li>
+    </ul>
+
+  </div>
+
+
+</nav>
+<ul id="nav-mobile" class="side-nav">
+  <li><a [routerLink]="'/'" (click)="closeSideNav();" class="white-text"><i
+        class="material-icons white-text">home</i>Inicio</a></li>
+
+  <li><a [routerLink]="'/news'" (click)="closeSideNav();" class="white-text"><i
+        class="material-icons white-text">notifications</i>Novedades</a>
+  </li>
+
+  <li><a href="#" (click)="closeSideNav();openModal();" class="white-text"><i
+        class="material-icons white-text">file_download</i>Descargar</a></li>
+
+  <li><a [routerLink]="'/gallery'" (click)="closeSideNav();" class="white-text"><i
+        class="material-icons white-text">photo_library</i>Galería</a></li>
+
+  <li><a [routerLink]="'/features'" (click)="closeSideNav();" class="white-text"><i
+        class="material-icons white-text">functions</i>Funciones</a></li>
+
+  <li><a [routerLink]="'/neonromerweb'" (click)="closeSideNav();" class="white-text"><i
+        class="material-icons white-text">web</i>NeonRom3r Web</a></li>
+</ul>
+
+
+
+<div id="downloadmodal" class="modal bottom-sheet white" materialize="modal"
+  [materializeParams]="[{dismissible: true}]">
+  <div class="modal-content">
+
+    <h5>Descargar app</h5>
+    <ul class="collection with-header  ">
+      <li role="button" class="collection-item avatar" (click)="openModalLink(this.direct)">
+        <i class="material-icons circle imgdown black">file_download</i>
+        <span class="title"><br></span>
+        <p>Descarga directa - {{version}}<br>
+        </p>
+      </li>
+
+      <li role="button" class="collection-item avatar" (click)="openModalLink(this.mega)">
+        <img src="assets/imgs/mega.png" alt="" class="circle imgdown">
+        <span class="title"><br></span>
+        <p>Mega - {{version}} <br>
+        </p>
+      </li>
+      <li role="button" href="#" class="collection-item avatar" (click)="openModalLink(this.aptoide)">
+        <img src="assets/imgs/download.jpg" alt="" class="circle imgdown">
+        <span class="title"><br></span>
+        <p>Aptoide - {{version}}<br>
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>

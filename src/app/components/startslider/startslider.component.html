@@ -1,0 +1,28 @@
+
+<div class="slider fullscreen" materialize="slider">
+  <ul class="slides black" id="slider" >
+      
+      <li *ngFor="let items of data">                                                                                                              
+          <img src={{items.image}}  style='opacity:0.5'>                                  
+          <div class='caption center-align' >                                                                                        
+            <h4>{{items.title}} </h4>                                                                                                     
+            <h6 class='light grey-text text-lighten-3'>                                                                              
+                {{items.text}}                               
+                                                                                           
+              </h6>     
+
+              <a *ngIf="isValidLink(items.link)" href={{items.link}} style='margin-top:calc(100% - 80px);'>Conozca mas</a> 
+              <a *ngIf="!isValidLink(items.link)" [routerLink]="['/features']" routerLinkActive="router-link-active"  style='margin-top:calc(100% - 80px);'>Conozca mas</a>                                                                                                                     
+          </div> 
+                                                                                                                         
+        </li>
+    
+
+  </ul>
+</div>
+<footer>
+  <span style="color:white;position:absolute;bottom:5px;left:4px;font-size:12px">
+    © 2018 Gregory Cabral De Los Santos
+    Github:github.com/Gr3gorywolf
+  </span>
+</footer>

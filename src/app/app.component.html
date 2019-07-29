@@ -1,0 +1,15 @@
+
+<main>
+    <!--When isnt on  neonrom3rSubpage-->
+    <header *ngIf="!isOnNeonRom3rWeb()">    
+        <app-navbar></app-navbar>
+      </header>
+      <!--When is on neonrom3rSubpage-->
+      <header *ngIf="isOnNeonRom3rWeb()">    
+          <app-neonromerwebnavbar></app-neonromerwebnavbar>
+        </header>
+  <router-outlet>
+    
+
+  </router-outlet>
+<main>

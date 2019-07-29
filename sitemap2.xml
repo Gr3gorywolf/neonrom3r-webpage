@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
      <priority>0.9</priority>
-     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/index.html</loc>  
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/funciones.html</loc>  
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/funciones</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/galeria.html</loc>  
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/galeria</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/novedades.html</loc>  
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/novedades</loc>  
   </url>
    <url>
      <priority>0.9</priority>
-     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/neonrom3rweb.html</loc>  
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/neonrom3rweb</loc>  
   </url>
 
   <url>
      <priority>0.9</priority>
-     <loc>https://neonromer.tk/index.html</loc>  
+     <loc>https://neonromer.tk/</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://neonromer.tk/funciones.html</loc>  
+     <loc>https://neonromer.tk/funciones</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://neonromer.tk/galeria.html</loc>  
+     <loc>https://neonromer.tk/galeria</loc>  
   </url>
    <url>
      <priority>0.5</priority>
-     <loc>https://neonromer.tk/novedades.html</loc>  
+     <loc>https://neonromer.tk/novedades</loc>  
   </url>
    <url>
      <priority>0.9</priority>
-     <loc>https://neonromer.tk/neonrom3rweb.html</loc>  
+     <loc>https://neonromer.tk/neonrom3rweb</loc>  
   </url>
 
 </urlset>

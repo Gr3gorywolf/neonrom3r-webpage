@@ -1,0 +1,22 @@
+
+<div *ngIf="!hasConsoleLoaded()" class="wallpapered"  style="width:100%;height:100%;position:fixed;z-index:0;">
+ 
+<div class="row container" style="z-index:233;margin-top: 144px"  >
+        <div class="col s12 center-align">
+                <img src="assets/imgs/Neonrom3rweb.png" class="responsive-img" />
+        </div>
+        <div class="col s12 center-align">
+                <h5 class="white-text">Que es neon rom3r web?<br>Es una aplicación web basada en los datos de la aplicación de
+                        neonrom3r que le permite a el usuario descargar los roms disponibles sin la
+                        necesidad de tener descargada la aplicacion<br>Usted puede seleccionar los roms
+                        que desea haciendo click en <i class="material-icons inline-icon">menu</i> en la
+                        parte superior izquierda y luego seleccionando nombre de la consola desde
+                        el menú</h5>
+        </div>
+    </div>
+</div>
+
+    <router-outlet *ngIf="hasConsoleLoaded()">
+    
+
+        </router-outlet>

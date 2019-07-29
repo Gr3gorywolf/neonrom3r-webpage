@@ -1,0 +1,67 @@
+<nav class="nav-extended black">
+  <div class="nav-wrapper">
+
+    <a [routerLink]="['/']" routerLinkActive="router-link-active"> <img class="brand-logo logito center "
+        src="assets/imgs/logolarge.png"/></a>
+    <h6 materialize="sideNav" [materializeParams]="[{edge:'left'}]" data-activates="nav-mobile"
+      style="cursor:pointer;margin-left:10px;" data-target="nav-mobile" class="sidenav-trigger show-on-large">
+      <i class="material-icons">menu</i>
+    </h6>
+  </div>
+
+  <div *ngIf="hasConsoleLoaded()" class="nav-content black" id="barrabusqueda">
+    <div class="container" style="margin-top:10px;">
+      <div class="col s8 center-align">
+        <div class="row">
+          <div class="input-field col s12 white-text">
+
+            <a class="prefix" 
+            id="searchToggle"
+            style="cursor:pointer;" > 
+
+              <i class="material-icons inline-icon" style="margin-top:-10px;"
+                >{{romservice.IsFiltering?'close':'search'}}</i>
+
+                
+              </a>
+
+
+            <input id="busqueda" type="text" style="color: white;" placeholder="Nombre del rom">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<ul id="nav-mobile" class="side-nav">
+  <li style="cursor:pointer"><a (click)="closeSideNav()" class="white-text"><i class="material-icons white-text">arrow_back</i>
+      Cerrar menú</a></li>
+
+
+  <li *ngFor="let romsinfos of data"  [routerLink]="['/neonromerweb/'+romsinfos.slug]" (click)="closeSideNav()"> 
+      <span class="new badge green right" data-badge-caption=" roms" style="margin-right:15px;">
+          {{romsinfos.romscount}}
+      </span>
+    <a  routerLinkActive="router-link-active"   class="white-text truncate">
+      <i class="material-icons white-text">videogame_asset</i>
+     {{romsinfos.consolename}}    
+      
+    </a>
+
+  </li>
+
+
+
+  <li>
+    <div class="divider"></div>
+  </li>
+  <li><a [routerLink]="['/']" (click)="closeSideNav()" routerLinkActive="router-link-active"  class="white-text"><i class="material-icons white-text ">exit_to_app</i>Salir de neonrom3r
+      web</a></li>
+
+
+</ul>
+<div class="progress white" *ngIf="this.romservice.Loading" id="loader" style="width:100%;position:fixed;top:calc(144px + 2%);margin-top:4px;z-index:500;">
+  <div class="indeterminate green"></div>
+
+</div>

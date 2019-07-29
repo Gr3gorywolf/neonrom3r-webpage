@@ -1,0 +1,67 @@
+<div style="margin-top:calc(144px + 2%);height:100%;">
+  <cdk-virtual-scroll-viewport #scrollview (scrolledIndexChange)="scrolled($event)"
+  itemSize="95"
+   style=" min-height: 100%;margin:0%;padding:0px;margin-bottom:-5%;" >
+    <ul class="collection">
+      <li class="collection-item avatar animated fadeInLeft faster waves-effect waves-green "
+        *cdkVirtualFor="let n of romservice.Roms"
+         style="height:75px;width: 100%"
+         (click)="openModal();loadRom(n.InfoLink)">
+        <img src={{n.Portrait}} alt="" class="circle" style="height:65px;width:65px;border-radius:0px;">
+        <div style="margin-top: 10px;margin-left: 15px;">
+          <span>{{n.Name}}</span>
+          <br>
+          <span>{{n.Region}}</span>
+        </div>
+      </li>
+    </ul>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+
+<div id="RomInfoModal" class="modal modal-fixed-footer bottom-sheet black" style="min-height:195px;max-height:195px;" materialize="modal"
+[materializeParams]="[{dismissible: true}]">
+  
+
+<div class="modal-content" style="height: 100%;">
+
+
+  <h6 class="center" *ngIf="romservice.LoadingInfo">
+  <div >
+
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-green-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</h6>
+
+<div *ngIf="!romservice.LoadingInfo" style="display: inline-flex">
+  <img style="height:85px;width: 85px;margin-top:20px; " src={{romservice.RomInformation.Portrait}}>
+  <div style="margin-top:15px;margin-left:10px">
+      <span class="white-text" style="width: 100%"><marquee scrollamount="2"  behavior="alternate">{{romservice.RomInformation.Name}}</marquee></span>
+      <br>
+      <span class="white-text">Tamaño: {{romservice.RomInformation.Size}}</span>
+      <br>
+      <span class="white-text">Region: {{romservice.RomInformation.Region}}</span>
+      <br>
+      <span class="white-text">Tamaño: {{romservice.RomInformation.Console}}</span>
+  </div>
+</div>
+
+
+  </div>
+  <div class="modal-footer black">
+    <a style="cursor: pointer" (click)="downloadRom(romservice.RomInformation.DownloadLink)" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Descargar</a>
+    <a style="cursor: pointer" class="modal-action modal-close waves-effect waves-green btn-flat green-text">Cerrar</a>
+  </div>
+</div>
+

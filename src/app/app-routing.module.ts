@@ -15,13 +15,13 @@ const routes: Routes = [
 {path:'neonromerweb',component:Neonrom3rwebComponent,
 children:[
   {path:'**',component:RomsgridComponent},
-
-]},
+        ]
+},
 {path:'**',redirectTo:''},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

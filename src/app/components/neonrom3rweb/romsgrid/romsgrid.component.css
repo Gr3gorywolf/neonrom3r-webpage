@@ -1,5 +1,5 @@
 cdk-virtual-scroll-viewport {
-    height:calc( 100vh - 175px);
+    height:calc( 100vh - 150px);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ cdk-virtual-scroll-viewport {
 
   @media(max-width:360px){
     cdk-virtual-scroll-viewport {
-        height:calc( 100vh - 154px);
+        height:calc( 100vh - 120px);
     
       }
     

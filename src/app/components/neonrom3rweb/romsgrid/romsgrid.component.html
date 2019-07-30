@@ -1,7 +1,7 @@
-<div style="margin-top:calc(144px + 2%);height:100%;">
+<div style="margin-top:calc(120px + 2%);min-height:100%">
   <cdk-virtual-scroll-viewport #scrollview (scrolledIndexChange)="scrolled($event)"
   itemSize="95"
-   style=" min-height: 100%;margin:0%;padding:0px;margin-bottom:-5%;" >
+   style=" min-height: 100%;margin:0%;padding:0px;" >
     <ul class="collection">
       <li class="collection-item avatar animated fadeInLeft faster waves-effect waves-green "
         *cdkVirtualFor="let n of romservice.Roms"
@@ -53,7 +53,7 @@
       <br>
       <span class="white-text">Region: {{romservice.RomInformation.Region}}</span>
       <br>
-      <span class="white-text">Tamaño: {{romservice.RomInformation.Console}}</span>
+      <span class="white-text">Consola: {{romservice.RomInformation.Console}}</span>
   </div>
 </div>
 

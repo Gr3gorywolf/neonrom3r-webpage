@@ -10,6 +10,8 @@ export class Neonrom3rwebComponent implements OnInit {
 
   constructor(private rout:Router) { }
   hasConsoleLoaded(){
+
+    
     return this.rout.url.replace("/","").split("neonromerweb")[1].trim()!=="";
    }
   ngOnInit() {

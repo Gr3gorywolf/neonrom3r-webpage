@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+     <priority>0.9</priority>
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/</loc>
+  </url>
+   <url>
+     <priority>0.5</priority>
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/funciones</loc>
+  </url>
+   <url>
+     <priority>0.5</priority>
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/galeria</loc>
+  </url>
+   <url>
+     <priority>0.5</priority>
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/novedades</loc>
+  </url>
+   <url>
+     <priority>0.9</priority>
+     <loc>https://gr3gorywolf.github.io/neonrom3r-webpage/neonrom3rweb</loc>
+  </url>
+</urlset>

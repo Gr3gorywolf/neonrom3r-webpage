@@ -28,11 +28,11 @@ data=[
   {romscount:702,consolename:'Nintendo',slug:'NES'},
   {romscount:8234,consolename:'Super Nintendo',slug:'SNES'},
   {romscount:282,consolename:'Nintendo 64',slug:'N64'},
-  {romscount:4012,consolename:'Nintendo DS',slug:'NDS'},
+  //{romscount:4012,consolename:'Nintendo DS',slug:'NDS'},
   {romscount:546,consolename:'Sega Dreamcast',slug:'Dreamcast'},
   {romscount:660,consolename:'Sega Genesis',slug:'Genesis'},
   {romscount:492,consolename:'Playstation 1',slug:'PSX'},
- 
+
 ]
 
 

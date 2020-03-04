@@ -10,13 +10,13 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
+
   }
 
   version = "V2.0";
   aptoide = "https://neon-rom3r-the-ultimate-application-of-roms-and-emulators.es.aptoide.com/?store_name=gr3apps&app_id=40785016";
   mega = "https://mega.nz/#!lBxy2SgD!5k7A1qqqlFBgdWoxAjE0_MAWK9yDvlFdKDtEql6yt_w";
-  direct = "https://github.com/Gr3gorywolf/NeonRom3r/raw/master/docs/GR3apps.neonrom3r.apk";
+  direct = "https://github.com/Gr3gorywolf/getromdownload/raw/master/GR3apps.neonrom3r.apk";
 
 
   openModalLink(link:string){
